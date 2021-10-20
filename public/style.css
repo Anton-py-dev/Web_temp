@@ -109,10 +109,21 @@ main {
   margin: 6px 12px;
 }
 
+.sort {
+  width: 115px;
+  height: 43px;
+  margin-left: -16px;
+  background: deeppink;
+  border-radius: 0px 9px 9px 0px;
+  text-align: center;
+  line-height: 42px;
+  font-weight: 600;
+}
+
 .filters {
   width: 115px;
   height: 43px;
-  margin-right: -16px;
+  margin-right: -8px;
   background: deeppink;
   border-radius: 9px 0 0 9px;
   text-align: center;
@@ -169,22 +180,11 @@ main {
   margin: auto;
 }
 
-.sort {
-  width: 115px;
-  height: 43px;
-  margin-left: -16px;
-  background: deeppink;
-  border-radius: 0px 9px 9px 0px;
-  text-align: center;
-  line-height: 42px;
-  font-weight: 600;
-}
-
-ul {
+.cars {
   margin-top: 25px;
 }
 
-ul {
+.cars {
   padding: 0;
   list-style-type: none;
   display: grid;
@@ -192,7 +192,7 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
-li {
+.cars li {
   width: 170px;
   height: 200px;
   text-align: center;
@@ -234,10 +234,90 @@ li .img {
   position: fixed;
   bottom: 0;
   background: #2f134b;
+  z-index: 1000;
 }
 
 .src {
   margin: 14px auto auto 15%;
+}
+
+.filtersFull {
+  background-color: deeppink;
+  width: 203px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+  border-radius: 9px 0 0 9px;
+  font-size: 15px;
+  z-index: 1;
+  top: 121px;
+  right: 0;
+  height: 600px;
+  overflow: scroll;
+}
+
+.filtersFull::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.filtersFull ul {
+  padding: 0;
+}
+
+.filtersFull li {
+  list-style-type: none;
+  margin: auto;
+}
+
+.Fline1 {
+  display: flex;
+  height: 43px;
+}
+
+.Fline1 img {
+  height: 12px;
+  margin-left: 12px;
+  margin-top: 13px;
+}
+
+.Fline1 p {
+  margin: auto;
+  position: relative;
+  right: 11px;
+}
+
+.fromTo {
+  display: flex;
+  font-size: 9px;
+  margin: auto;
+}
+
+.fromTo p {
+  margin: 2px 0 0;
+}
+
+.from {
+  margin-left: 29px;
+  margin-right: 33px;
+}
+
+.fromVal {
+  width: 56px;
+  height: 18px;
+  border-radius: 5px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  text-align: center;
+}
+
+.toVal {
+  width: 56px;
+  height: 18px;
+  border-radius: 5px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
