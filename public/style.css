@@ -112,9 +112,9 @@ main {
 .sort {
   width: 115px;
   height: 43px;
-  margin-left: -16px;
+  margin-left: -8px;
   background: deeppink;
-  border-radius: 0px 9px 9px 0px;
+  border-radius: 0 9px 9px 0;
   text-align: center;
   line-height: 42px;
   font-weight: 600;
@@ -210,6 +210,10 @@ li .like {
   border: solid deeppink;
   border-radius: 5px;
   margin: 7px auto auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
 }
 
 .price {
@@ -242,6 +246,7 @@ li .img {
 }
 
 .filtersFull {
+  display: none;
   background-color: deeppink;
   width: 203px;
   position: absolute;
@@ -253,7 +258,7 @@ li .img {
   z-index: 1;
   top: 121px;
   right: 0;
-  height: 600px;
+  height: 500px;
   overflow: scroll;
 }
 
@@ -318,6 +323,47 @@ li .img {
   border-color: #FFFFFF;
   border-style: solid;
   text-align: center;
+}
+
+.sortFull {
+  display: none;
+  background-color: deeppink;
+  width: 203px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+  border-radius: 0 9px 9px 0;
+  font-size: 15px;
+  z-index: 1;
+  top: 121px;
+  left: 0;
+  height: 500px;
+  overflow: scroll;
+}
+
+.sort:hover .sortFull {
+  display: block;
+}
+
+.sortFull::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.sortFull ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sortFull li {
+  margin-top: 45px;
+}
+
+.sortFull .X {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  height: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
