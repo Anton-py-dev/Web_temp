@@ -20,6 +20,10 @@ main {
   padding-bottom: 58px;
 }
 
+p {
+  margin: 0;
+}
+
 .rectangle {
   margin: 3px;
   width: 25px;
@@ -189,7 +193,7 @@ main {
   list-style-type: none;
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 .cars li {
@@ -197,7 +201,7 @@ main {
   height: 200px;
   text-align: center;
   margin: auto;
-  padding: 2px 15px;
+  padding: 2px 5px;
 }
 
 li .like {
@@ -262,6 +266,10 @@ li .img {
   overflow: scroll;
 }
 
+.filters:hover .filtersFull {
+  display: block;
+}
+
 .filtersFull::-webkit-scrollbar {
   width: 0 !important;
 }
@@ -299,7 +307,7 @@ li .img {
 }
 
 .fromTo p {
-  margin: 2px 0 0;
+  margin: 0;
 }
 
 .from {
@@ -313,7 +321,15 @@ li .img {
   border-radius: 5px;
   border-color: #FFFFFF;
   border-style: solid;
+  line-height: 18px;
   text-align: center;
+}
+
+.fromN {
+  position: relative;
+  line-height: 15px;
+  color: #AE007D;
+  right: 20%;
 }
 
 .toVal {
@@ -322,7 +338,15 @@ li .img {
   border-radius: 5px;
   border-color: #FFFFFF;
   border-style: solid;
+  line-height: 18px;
   text-align: center;
+}
+
+.toN {
+  position: relative;
+  line-height: 15px;
+  color: #AE007D;
+  left: 20%;
 }
 
 .sortFull {
