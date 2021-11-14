@@ -16,6 +16,9 @@ header
 main
   padding-bottom: 58px
 
+p
+  margin: 0
+
 .rectangle
   margin: 3px
   width: 25px
@@ -95,9 +98,9 @@ main
 .sort
   width: 115px
   height: 43px
-  margin-left: -16px
+  margin-left: -8px
   background: deeppink
-  border-radius: 0px 9px 9px 0px
+  border-radius: 0 9px 9px 0
   text-align: center
   line-height: 42px
   font-weight: 600
@@ -165,14 +168,14 @@ main
   list-style-type: none
   display: grid
   grid-gap: 15px
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))
 
 .cars li
   width: 170px
   height: 200px
   text-align: center
   margin: auto
-  padding: 2px 15px
+  padding: 2px 5px
 
 li .like
   text-align: left
@@ -183,6 +186,10 @@ li .like
   border: solid deeppink
   border-radius: 5px
   margin: 7px auto auto
+  font-weight: normal
+  font-size: 14px
+  line-height: 22px
+  text-align: center
 
 .price
   color: yellow
@@ -214,6 +221,7 @@ li .img
 
 ///////////////   Розгорнутий фільтр   ///////////////////
 .filtersFull
+  display: none
   background-color: deeppink
   width: 203px
   position: absolute
@@ -225,8 +233,11 @@ li .img
   z-index: 1
   top: 121px
   right: 0
-  height: 600px
+  height: 500px
   overflow: scroll
+
+.filters:hover .filtersFull
+  display: block
 
 .filtersFull::-webkit-scrollbar
   width: 0 !important
@@ -258,7 +269,7 @@ li .img
   margin: auto
 
 .fromTo p
-  margin: 2px 0 0
+  margin: 0
 
 .from
   margin-left: 29px
@@ -270,7 +281,14 @@ li .img
   border-radius: 5px
   border-color: #FFFFFF
   border-style: solid
+  line-height: 18px
   text-align: center
+
+.fromN
+  position: relative
+  line-height: 15px
+  color: #AE007D
+  right: 20%
 
 .toVal
   width: 56px
@@ -278,5 +296,47 @@ li .img
   border-radius: 5px
   border-color: #FFFFFF
   border-style: solid
+  line-height: 18px
   text-align: center
+
+.toN
+  position: relative
+  line-height: 15px
+  color: #AE007D
+  left: 20%
+
 ///////////   Розгорнуте сортування  ///////////////
+.sortFull
+  display: none
+  background-color: deeppink
+  width: 203px
+  position: absolute
+  margin-left: auto
+  margin-right: 0
+  text-align: center
+  border-radius: 0 9px 9px 0
+  font-size: 15px
+  z-index: 1
+  top: 121px
+  left: 0
+  height: 500px
+  overflow: scroll
+
+.sort:hover .sortFull
+  display: block
+
+.sortFull::-webkit-scrollbar
+  width: 0 !important
+
+.sortFull ul
+  padding: 0
+  margin: 0
+
+.sortFull li
+  margin-top: 45px
+
+.sortFull .X
+  position: absolute
+  right: 12px
+  top: 10px
+  height: 12px
